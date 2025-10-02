@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  max-width: 1600px;
+  width: 100%;
+  min-height: 100vh;
+  background-color:#000;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.contact_scroll {
+  width: 100%;
+  max-width: 1600px;
+  height: 40px;
+  background-color: #211951;
+  text-align: right;
+}
+.contact_scroll {
+  width: 100%;
+  max-width: 1600px;
+  height: 30px;
+  background-color: #000;
+  text-align: right;
+}
+.contact_scroll p {
+  color: #fff;
+  line-height: 40px;
+  width: 100%;
+  font-size: 15px;
+  text-transform: uppercase;
+  animation: scroll 15s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@media (max-width: 952px) {
+  .contact_scroll {
+    width: 100%;
+    max-width: 991px;
+    height: 60px;
+  }
+  .contact_scroll p {
+    font-size: 1.5rem;
+    line-height: 60px;
+  }
+}
+@media (max-width: 750px) {
+  .contact-scroll {
+    width: 100%;
+    max-width: 750px;
+    height: 60px;
+  }
+  .contact-scroll p {
+    font-size: 1rem;
+    line-height: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .contact-scroll {
+    width: 100%;
+    max-width: 600px;
+    height: 50px;
+  }
+  .contact-scroll p {
+    font-size: 0.5rem;
+    line-height:1;
+  }
+}
+@media (max-width: 575px) {
+  .contact_scroll {
+    max-width: 575px;
+    width: 100%;
+    height: 40px;
+  }
+  .contact_scroll p {
+    font-size: 0.9rem;
+    line-height: 40px;
+  }
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1111;
+  background-color: transparent;
+}
+nav {
+  height: 100px;
+  width: 100%;
+}
+nav label img {
+  width: 120px;
+  height: 120px;
+  margin-left: 40px;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+  background-color: #000;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  padding: 7px 12px;
+  color: white;
+}
+nav ul li a:hover,
+a.active {
+  background-color: #ef7722;
+  transition: 0.6s ease-in-out;
+  border-radius: 10px;
+}
+.checkBtn {
+  color: #fff;
+  font-size: 1.7rem;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+/*Navbar responsive*/
+
+@media (max-width: 952px) {
+  nav {
+    background-color: #000;
+  }
+  nav label img {
+    align-self: center;
+    width: 150px;
+    height: auto;
+  }
+  nav ul {
+    height: 100px;
+    line-height: 120px;
+    z-index: 99;
+  }
+}
+@media (max-width: 750px) {
+  nav {
+    background-color: #000;
+  }
+  nav label img {
+    width: 120px;
+    height: 120px;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    top: 120px;
+    left: -100%;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    z-index: 99;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0px;
+  }
+  nav ul li a {
+    font-size: 1.3rem;
+    padding: 7px 12px;
+    border-bottom: 1px solid white;
+  }
+  nav ul li a:hover,
+  a.active {
+    background: none;
+    color: #ef7722;
+  }
+  .checkBtn {
+    display: block;
+    z-index: 999;
+    font-size: 1.6rem;
+    padding-top: 5px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+@media (max-width: 575px) {
+  nav {
+    background-color: #000;
+  }
+  nav label img {
+    width: 100px;
+    height: 100px;
+    margin-left: 15px;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    top: 120px;
+    left: -100%;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    z-index: 99;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0px;
+  }
+  nav ul li a {
+    font-size: 1.2rem;
+    border-bottom: 1px solid white;
+  }
+  nav ul li a:hover,
+  a.active {
+    background: none;
+    color: #ef7722;
+  }
+  .checkBtn {
+    display: block;
+    z-index: 999;
+    font-size: 1.5rem;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+section{
+  max-width: 1600px;
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  background-color: #000;
+}
+.wrapper{
+  max-width: 1300px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+.row{
+  max-width: 500px;
+  height: auto;
+}
+.image-section img{
+  max-width: 400px;
+  height: auto;
+  border-radius: 25px;
+}
+.content{
+  background-color: brown;
+  max-width: 600px;
+  min-height: 60vh;
+  border-radius: 25px;
+}
+.content h1{
+  font-size: 3.2rem;
+  padding: 10px 0;
+  margin-left: 20px;
+  color:#ED3F27;
+}
+.content h2{
+  font-size: 2.5rem;
+  padding: 10px 0;
+  margin-left: 20px;
+}
+.content p{
+  color: #FFF;
+  font-size:0.9rem;
+  line-height: 1.5;
+  padding: 10px 0;
+  margin-left: 20px;
+}
+/*Footer Section*/
+
+.footer_section{
+  width: 100%;
+  max-width: 1600px;
+  min-height: 15vh;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+.footer_section h3,.footer_icons,p{
+  padding: 15px 0;
+}
+
+.footer_icons a{
+  font-size: 1.4rem;
+  color: #000;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+}
+.footer_icons a:hover{
+  background-color: #000;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+
+@media (max-width:950px){
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 60vh;
+    margin-top: 100px;
+  }
+  .content{
+    background-color: #000;
+  }
+  .content h2{
+    color: #fff;
+  }
+}
+@media (max-width:750px){
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  }
+  .content{
+    background-color: #000;
+    text-align: center;
+    margin: 30px auto;
+  }
+ 
+  .content h2{
+    color: #fff;
+  }
+}
+@media (max-width:575px){
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+  }
+  .content{
+    background-color: #000;
+  }
+  .content h2{
+    color: #fff;
+  }
+}
