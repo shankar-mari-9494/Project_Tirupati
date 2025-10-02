@@ -11,12 +11,6 @@
 html {
   scroll-behavior: smooth;
 }
-body {
-  width: 100%;
-  max-width: 1600px;
-  min-height: 100vh;
-}
-
 .contact_scroll {
   width: 100%;
   max-width: 1600px;
@@ -84,7 +78,7 @@ body {
   max-width: 1600px;
   width: 100%;
   min-height: 100vh;
-  background-image: url(./siya-ram-glowing-7680x4320-14379.webp);
+  background-image: url(./ramsita.webp);
   background-color: rgba(0, 0, 0, 0.4);
   background-position: center;
   background-size: cover;
