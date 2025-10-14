@@ -279,6 +279,7 @@ section{
   max-width: 600px;
   min-height: 60vh;
   border-radius: 25px;
+  padding-right:15px;
 }
 .content h1{
   font-size: 3.2rem;
